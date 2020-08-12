@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Masters_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="AdminMaster.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+             
+    <header class="main">
+        <h1>Family Resturant</h1>
+    </header>
+           <nav>
+          <ul>
+            <li><a href="../admin/Admin-Home.aspx">HOME </a></li>
+            <li><a href="../Employee/Emp-EmployeeRegistration.aspx">Employees </a></li>
+            <li><a href="../Employee/ClientAllService.aspx">Customers </a></li>
+             <li><a href="../Category/Category.aspx">Category </a></li>
+            <li><a href="../Food/ًFood.aspx">Food </a></li>
+            <li><a href="#">Orders </a></li>
+             <li> <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LOGOUT </asp:LinkButton></li>
+          </ul>
+        </nav>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+       
+    <div class="clearfix">
+    <footer>
+    copyright &copy; ALL rights RESERVED 
+    </footer>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

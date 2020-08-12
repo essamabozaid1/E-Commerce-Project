@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Employee.master.cs" Inherits="Masters_Employee" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="EmployeeMaster.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <header class="main">
+          &nbsp;<ul >
+
+  <li><a href="../Employee/Emp-Home.aspx">HOME</a></li>
+  <li><a href="../Employee/Emp-ClientAllService.aspx">Client</a></li>
+
+  <li><a href="../Category/Category.aspx">CATEGORY</a></li>
+  <li><a href="../Food/ًFood.aspx">Food</a></li>
+  <li><a href="#">BUY</a></li>
+  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LOGOUT</asp:LinkButton>
+         </ul>
+    </header>
+           <div class="clearfix">
+               COPYRIGHT &copy; ALL RIGHTS RESERVED
+           </div>
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

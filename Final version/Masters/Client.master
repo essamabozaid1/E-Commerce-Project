@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Client.master.cs" Inherits="Client" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="ClientMaster.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <header class="main">
+          &nbsp;<ul >
+  <li><a style="color:blue" href="../Client/ClientHome.aspx">HOME</a></li>
+
+  <li><a href="#" >BUY</a></li>
+  <li><a href="#" >Contact</a></li>
+              <li><a href="#">Login</a></li>
+
+  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LOGOUT</asp:LinkButton>
+         </ul>
+    </header>
+
+
+
+           <div class="clearfix">
+               COPYRIGHT &copy; ALL RIGHTS RESERVED
+           </div>
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
